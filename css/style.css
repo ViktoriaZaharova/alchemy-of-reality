@@ -1,0 +1,364 @@
+@font-face {
+  font-family: "Jost";
+  font-weight: 100;
+  font-style: normal;
+  src: url("../fonts/Jost/Jost-Thin.eot");
+  src: url("../fonts/Jost/Jost-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Jost/Jost-Thin.woff") format("woff"), url("../fonts/Jost/Jost-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Jost";
+  font-weight: 200;
+  font-style: normal;
+  src: url("../fonts/Jost/Jost-ExtraLight.eot");
+  src: url("../fonts/Jost/Jost-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Jost/Jost-ExtraLight.woff") format("woff"), url("../fonts/Jost/Jost-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Jost";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Jost/Jost-Light.eot");
+  src: url("../fonts/Jost/Jost-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Jost/Jost-Light.woff") format("woff"), url("../fonts/Jost/Jost-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Jost";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Jost/Jost-Regular.eot");
+  src: url("../fonts/Jost/Jost-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Jost/Jost-Regular.woff") format("woff"), url("../fonts/Jost/Jost-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Jost";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Jost/Jost-Medium.eot");
+  src: url("../fonts/Jost/Jost-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Jost/Jost-Medium.woff") format("woff"), url("../fonts/Jost/Jost-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Jost";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Jost/Jost-SemiBold.eot");
+  src: url("../fonts/Jost/Jost-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Jost/Jost-SemiBold.woff") format("woff"), url("../fonts/Jost/Jost-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Jost";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Jost/Jost-Bold.eot");
+  src: url("../fonts/Jost/Jost-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Jost/Jost-Bold.woff") format("woff"), url("../fonts/Jost/Jost-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Jost";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/Jost/Jost-ExtraBold.eot");
+  src: url("../fonts/Jost/Jost-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Jost/Jost-ExtraBold.woff") format("woff"), url("../fonts/Jost/Jost-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Jost";
+  font-weight: 900;
+  font-style: normal;
+  src: url("../fonts/Jost/Jost-Black.eot");
+  src: url("../fonts/Jost/Jost-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Jost/Jost-Black.woff") format("woff"), url("../fonts/Jost/Jost-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kudry";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Kudry/Kudry-WeirdHeadline.eot");
+  src: url("../fonts/Kudry/Kudry-WeirdHeadline.eot?#iefix") format("embedded-opentype"), url("../fonts/Kudry/Kudry-WeirdHeadline.woff") format("woff"), url("../fonts/Kudry/Kudry-WeirdHeadline.ttf") format("truetype");
+}
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-size: 32px;
+  min-width: 320px;
+  position: relative;
+  line-height: normal;
+  font-family: "Jost", sans-serif;
+  font-weight: normal;
+  background: #F4F4F4;
+  color: #232323;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  transition: 0.3s ease;
+  outline: none;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+input, textarea, select {
+  outline: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0 15px;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 54px;
+  background: transparent;
+  color: #000;
+  font-size: 15px;
+  cursor: pointer;
+}
+input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+  color: #595959;
+}
+input::placeholder, textarea::placeholder, select::placeholder {
+  color: #595959;
+}
+input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+input[type=radio], input[type=checkbox] {
+  width: auto;
+  height: auto;
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+  margin: 0 5px 0 0;
+  display: inline;
+}
+
+label {
+  display: block;
+  width: 100%;
+  margin: 0 0 13px;
+}
+label:last-child {
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+  padding: 12px 17px;
+  height: 103px;
+}
+
+button, .btn {
+  outline: none;
+  transition: 0.3s ease;
+  cursor: pointer;
+  box-shadow: none;
+  font-family: "Jost", sans-serif;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+button:hover, button:focus, .btn:hover, .btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 45px;
+  font-size: 16px;
+  font-weight: bold;
+  height: 46px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.svg-icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+strong, b {
+  font-weight: bold;
+  display: inline-block;
+}
+
+ul, ol {
+  padding: 0 0 0 20px;
+}
+
+.my-ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list-dots {
+  list-style-type: disc;
+}
+
+h1, .h1 {
+  width: 100%;
+  font-family: "Kudry", sans-serif;
+  font-size: 240px;
+  margin: 0 auto;
+}
+
+h2, .h2 {
+  width: 100%;
+  text-align: center;
+  font-family: "Kudry", sans-serif;
+  font-size: 100px;
+  margin: 0 auto 25px;
+}
+
+.text-decor {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text-decor::before {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  width: 50px;
+  height: 42px;
+  background: url("../img/title-decor.svg") no-repeat center;
+  background-size: 100%;
+}
+
+.subtitle-text {
+  text-align: center;
+  font-style: italic;
+  font-size: 42px;
+  line-height: 130%;
+  max-width: 1190px;
+  margin: 0 auto 50px;
+}
+
+.link-document {
+  color: #ECECEC;
+  opacity: 0.7;
+}
+.link-document:hover, .link-document:focus {
+  color: #ECECEC;
+  opacity: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.box-text p {
+  margin: 0 0 30px;
+}
+.box-text p:last-child {
+  margin: 0;
+}
+
+.list-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-social li {
+  margin: 0 20px 0 0;
+}
+.list-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 135px;
+  height: 135px;
+  min-width: 135px;
+  border-radius: 50%;
+  background: #A67C8C;
+  position: relative;
+  z-index: 1;
+  padding: 7px;
+}
+.list-social a:hover {
+  background: #4B6359;
+}
+
+.link-instagram::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 14px;
+  top: 25px;
+  right: 30px;
+  background: url("../img/star-insta.svg") no-repeat center;
+  background-size: 100%;
+}
+
+.list-social-green li a {
+  background: #4B6359;
+}
+.list-social-green li a:hover {
+  background: #A67C8C;
+}
