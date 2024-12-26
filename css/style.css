@@ -340,6 +340,9 @@ h2, .h2 {
   line-height: 110%;
   margin: 0 auto 25px;
 }
+h2 span, .h2 span {
+  display: block;
+}
 
 h3, .h3 {
   width: 100%;
@@ -408,8 +411,17 @@ h3, .h3 {
   padding: 0 20px;
 }
 
+.col-30 {
+  width: 33.33%;
+  padding: 0 10px;
+}
+
 .w-100 {
   width: 100%;
+}
+
+.m-50 {
+  margin: 50px 0;
 }
 
 .box-text p {
