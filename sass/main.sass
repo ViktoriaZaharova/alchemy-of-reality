@@ -1,3 +1,411 @@
 @import "vars"
 
-  
+// home
+.home
+  background: url('../img/home-bg.png') no-repeat center
+  background-size: cover
+  position: relative
+  z-index: 1
+  padding: 203px 0 132px
+  .container
+    max-width: none
+  .h1
+    font-size: 172px
+    line-height: 90%
+  .box-text
+    margin: 35px auto 60px
+    text-align: center
+    max-width: 602px
+    width: 100%
+    line-height: 130%
+    font-size: 32px
+
+.home-image
+  width: calc(100% - 900px)
+  margin: auto 0 0 0
+
+.home-image-text
+  position: relative
+  z-index: 1
+  color: $white
+  font-size: 30px
+  width: 100%
+  max-width: 570px
+  padding: 14px 34px 66px
+  text-align: center
+  margin: 0 auto
+  &::before
+    content: ''
+    position: absolute
+    z-index: -1
+    @include d-flex
+    width: 728px
+    height: 430px
+    margin: 0 auto
+    left: 50%
+    top: 0
+    transform: translate(-50%,0)
+    background: url('../img/ellipse-text.svg') no-repeat center
+    background-size: 100%
+  img
+    margin: 0 auto 20px
+
+.home-content
+  max-width: 900px
+  width: 100%
+  margin: 0 0 0 auto
+
+.slogan
+  text-align: center
+  margin: 14px auto -10px
+  max-width: 745px
+  width: 100%
+  padding: 10px 37px 10px
+  font-size: 30px
+  font-style: italic
+  color: $green
+  border: 1px dashed $green
+  border-radius: 10px
+
+// routine
+.routine
+  margin: 50px 0 100px
+  .container
+    flex-direction: column
+    align-items: center
+  h2
+    span
+      display: block
+  .box-text
+    max-width: 710px
+    width: 100%
+    margin: 0 auto
+    text-align: center
+    strong
+      font-weight: 500
+      font-style: italic
+  h3
+    max-width: 900px
+    margin: 0 auto 40px
+    text-align: center
+
+.routine-icons
+  @include d-flex
+  margin: 0 auto 30px
+
+.routine-top
+  padding: 0 0 413px
+  background: url('../img/routine-bg.png') no-repeat center bottom
+  background-size: cover
+
+.routine-bottom
+  padding: 80px 0 0
+  width: 100%
+  background: url('../img/routine-bg-bottom.svg') no-repeat center bottom
+  background-size: cover
+  .box-text
+    max-width: 854px
+
+// signs
+.signs
+  color: $white
+ 
+  h2
+    text-align: left
+  .subtitle-text
+    text-align: left
+    flex-direction: row
+    align-items: flex-start
+    justify-content: flex-start
+    font-size: 42px
+    font-style: normal
+    font-weight: normal
+    margin: 0 0 50px
+    max-width: 700px
+    &::before
+      width: 30px
+      height: 26px
+      min-width: 30px
+      margin: 15px 25px 0 0
+
+.signs-wrapper
+  background: $black url('../img/signs-bg.png') no-repeat center
+  background-size: contain
+  border-radius: 70px
+  padding: 100px 0 50px
+
+.signs-box
+  margin: 0 0 50px
+  h4
+    margin: 0 0 15px
+  &__number
+    margin: 0 0 0 50px
+    border-radius: 50%
+    position: relative
+    z-index: 1
+    text-align: center
+    width: 100px
+    height: 100px
+    min-width: 100px
+    background: $pink
+    font-size: 54px
+    line-height: 110%
+    font-family: $font
+    @include d-flex
+    span
+      position: relative
+      z-index: 1
+      width: 100%
+      height: 100%
+      background: $pink
+      border-radius: 50%
+      @include d-flex
+      text-align: center
+    &::before
+      content: ''
+      position: absolute
+      z-index: -1
+      width: 100px
+      height: 100px
+      left: 5px
+      top: 0
+      background: $white
+      border-radius: 50%
+
+  &__text
+    width: 100%
+    border: 2px dashed $white
+    border-radius: 30px
+    margin: -50px 0 0
+    background: $black
+    padding: 80px 12px 50px 50px
+    .box-text
+      font-size: 36px
+      font-weight: 300
+
+// think-about
+.think-about
+  background: url('../img/think-bg.png') no-repeat right top
+  background-size: 100%
+  padding: 100px 0 0
+  margin: 0 0 40px
+  h2
+    color: $green
+    text-transform: uppercase
+    text-align: left
+    margin: 0 0 20px
+    line-height: 110%
+
+  &__content
+    max-width: 920px
+    width: 100%
+    line-height: 130%
+  .box-text
+    margin: 40px 0
+  .h2
+    margin: 100px auto 0
+    span
+      display: block
+
+.think-about-question
+  display: flex
+  align-items: center
+  &::before
+    content: ''
+    @include d-flex
+    border-radius: 50%
+    width: 100px
+    height: 100px
+    min-width: 100px
+    margin: 0 25px 0 0
+    background: $pink url('../img/think-icon.svg') no-repeat center
+    background-size: 52px
+    padding: 24px
+
+.think-about-info
+  max-width: 900px
+  padding: 50px 30px 50px 100px
+  font-style: italic
+  border-radius: 30px
+  background: $green url('../img/think-about-icon.svg') no-repeat left top
+  background-size: 179px
+  color: $white
+
+// author 
+.author
+  padding: 205px 0 0
+  margin: 0 0 100px
+  background: url('../img/author-bg.png') no-repeat center top
+  background-size: cover
+  h2
+    max-width: 1600px
+    margin: 0 auto 11px
+
+.author-image
+  position: relative
+  z-index: 1
+  @include d-flex
+  &::before
+    content: ''
+    position: absolute
+    top: 236px
+    right: -86px
+    width: 137px
+    height: 124px
+    background: url('../img/pic1.png') no-repeat center
+    background-size: 100%
+
+.author-text
+  color: $white
+  text-align: center
+  max-width: 1280px
+  width: 100%
+  padding: 50px
+  background: $green url('../img/author-icon1.svg') no-repeat center
+  background-size: cover
+  position: relative
+  z-index: 1
+  margin: -270px auto 0
+  border-radius: 40px
+  &::before
+    content: ''
+    position: absolute
+    // z-index: -1
+    width: 308px
+    height: 289px
+    left: -142px
+    bottom: 30px
+    background: url('../img/pic2.png') no-repeat center
+    background-size: 100%
+  p
+    margin: 0 auto 15px
+    max-width: 842px
+    &:last-child
+      margin: 0 auto
+      max-width: 1050px
+
+// combine
+.combine
+  h2
+    text-align: left
+    margin: 0 0 30px
+    max-width: 720px
+  .box-text
+    font-weight: 300
+
+.combine-wrapper
+  width: 100%
+  background: $black
+  border-radius: 70px
+  color: $white
+  padding: 100px 0
+
+.combine-history
+  display: flex
+  align-items: center
+  &::before
+    content: ''
+    margin: 0 25px 0 0
+    width: 108px
+    height: 188px
+    min-width: 108px
+    background: url('../img/combine-icons.svg') no-repeat center
+    background-size: 100%
+
+.combine-image
+  width: 100%
+  @include d-flex
+  z-index: -1
+  position: relative
+  margin: -100px 0 -230px
+  img
+    width: 100%
+
+.combine-description
+  color: $white
+  padding: 55px 40px 55px 263px
+  border-radius: 30px
+  background: $pink url('../img/combine-bg-icon.svg') no-repeat left center
+  background-size: 100%  
+
+.combine-box
+  width: 100%
+  border: 2px dashed $white
+  border-radius: 30px
+  margin: 0 0 40px
+  padding: 40px
+  font-weight: 300
+  strong
+    font-weight: normal
+  img
+    margin: 0 0 40px
+
+.my-goal
+  margin: 40px 0
+  h3
+    text-transform: uppercase
+    margin: 0 0 5px
+
+.combine-help
+  padding: 0 0 0 30px
+  font-weight: 300
+  position: relative
+  z-index: 1
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translate(0,-50%)
+    width: 6px
+    height: calc(100% - 26px)
+    background: $white
+
+.text-description
+  text-align: center
+  font-style: italic
+  margin: 40px auto 50px
+  max-width: 780px
+  font-weight: normal    
+
+// about-course
+.about-course
+  padding: 100px 0 150px
+  background: url('../img/about-course.png') no-repeat left bottom
+  background-size: cover  
+  &-content
+    margin-left: auto
+    max-width: 900px
+    width: 100%  
+  .h1
+    line-height: 90%
+    font-size: 172px  
+    
+  h2.h1
+    text-transform: uppercase
+    font-size: 170px
+  .box-text
+    margin: 40px 0 30px
+    img
+      max-width: 30px
+      margin: 0 10px 0 0
+      display: inline
+
+.about-course-history
+  text-align: center
+  background: $pink url('../img/about-history-bg.svg') no-repeat center
+  background-size: cover
+  border-radius: 30px
+  color: $white
+  padding: 50px 75px
+  font-style: italic
+
+.about-course-blockquote
+  display: flex
+  align-items: center
+  margin: 40px 0 0
+  .photo
+    @include d-flex
+    width: 154px
+    min-width: 154px
+    margin: 0 26px 0 0  

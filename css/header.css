@@ -1,0 +1,76 @@
+header {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  max-width: 900px;
+  width: 100%;
+}
+header .container {
+  align-items: center;
+}
+
+.logo {
+  font-size: 44px;
+  font-family: "Kudry", sans-serif;
+  color: #232323;
+  line-height: 100%;
+}
+.logo span {
+  color: #4B6359;
+  display: block;
+}
+.logo span::before {
+  content: "";
+  display: inline-block;
+  width: 68px;
+  height: 32px;
+  min-width: 68px;
+  background: url("../img/logo-icon.svg") no-repeat center;
+  background-size: 100%;
+  margin: 0 5px 0 0;
+}
+
+.link-whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  min-width: 70px;
+  fill: #4B6359;
+}
+.link-whatsapp:hover {
+  fill: #A67C8C;
+}
+
+.date-box {
+  margin: 0 auto 0 156px;
+  background: #A67C8C;
+  color: #F4F4F4;
+  padding: 19px 30px;
+  border-radius: 0 0 10px 10px;
+  font-size: 30px;
+  line-height: 100%;
+  font-weight: 300;
+}
+.date-box p {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.date-box p::before {
+  content: "";
+  display: inline-block;
+  margin: 0 10px 0 0;
+  width: 23px;
+  height: 23px;
+  min-width: 23px;
+  background: url("../img/calendar.svg") no-repeat center;
+  background-size: 100%;
+}
+.date-box span {
+  line-height: 130%;
+}

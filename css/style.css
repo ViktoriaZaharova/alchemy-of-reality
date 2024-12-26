@@ -106,14 +106,18 @@ table {
 }
 
 body {
-  font-size: 32px;
+  font-size: 42px;
   min-width: 320px;
   position: relative;
-  line-height: normal;
+  line-height: 130%;
   font-family: "Jost", sans-serif;
   font-weight: normal;
   background: #F4F4F4;
   color: #232323;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 img {
@@ -214,11 +218,66 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   justify-content: center;
   text-align: center;
   padding: 10px 45px;
-  font-size: 16px;
-  font-weight: bold;
-  height: 46px;
-  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 34px;
+  font-weight: 600;
+  height: 130px;
+  border-radius: 200px;
   transition: 0.3s ease;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-decor::before, .btn-decor:after {
+  content: "";
+  position: absolute;
+  top: -186px;
+  width: 120px;
+  height: 205px;
+  background: url("../img/hand-green1.svg") no-repeat center;
+  background-size: 100%;
+  z-index: -1;
+  transition: 0.3s ease;
+}
+.btn-decor::before {
+  left: 70px;
+}
+.btn-decor:after {
+  right: 70px;
+  background: url("../img/hand-green2.svg") no-repeat center;
+  background-size: 100%;
+}
+
+.btn-decor-v2:before {
+  left: 0;
+}
+.btn-decor-v2::after {
+  right: 0;
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px 0 0;
+}
+
+.btn-green {
+  color: #F4F4F4;
+  background: #4B6359;
+}
+.btn-green:hover, .btn-green:focus {
+  background: #A67C8C;
+  color: #F4F4F4;
+}
+.btn-green:hover::before, .btn-green:focus::before {
+  background: url("../img/hand-pink1.svg") no-repeat center;
+  background-size: 100%;
+}
+.btn-green:hover::after, .btn-green:focus::after {
+  background: url("../img/hand-pink2.svg") no-repeat center;
+  background-size: 100%;
 }
 
 .svg-icon {
@@ -229,7 +288,6 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 
 strong, b {
   font-weight: bold;
-  display: inline-block;
 }
 
 ul, ol {
@@ -245,10 +303,32 @@ ul, ol {
   list-style-type: disc;
 }
 
-h1, .h1 {
+.color-pink {
+  color: #A67C8C;
+}
+
+.color-green {
+  color: #4B6359;
+}
+
+.style-italic {
+  font-style: italic;
+}
+
+h1 {
+  width: 100%;
+  font-size: 170px;
+  font-weight: normal;
+  font-family: "Kudry", sans-serif;
+  line-height: 90%;
+  text-transform: uppercase;
+}
+
+.h1 {
   width: 100%;
   font-family: "Kudry", sans-serif;
   font-size: 240px;
+  line-height: 100%;
   margin: 0 auto;
 }
 
@@ -257,7 +337,15 @@ h2, .h2 {
   text-align: center;
   font-family: "Kudry", sans-serif;
   font-size: 100px;
+  line-height: 110%;
   margin: 0 auto 25px;
+}
+
+h3, .h3 {
+  width: 100%;
+  font-size: 62px;
+  line-height: 110%;
+  font-family: "Kudry", sans-serif;
 }
 
 .text-decor {
@@ -307,6 +395,17 @@ h2, .h2 {
   margin: 0 auto;
   position: relative;
   z-index: 1;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+.col-50 {
+  width: 50%;
+  padding: 0 20px;
 }
 
 .w-100 {

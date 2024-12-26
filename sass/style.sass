@@ -37,14 +37,17 @@ table
   border-spacing: 0
 
 body
-  font-size: 32px
+  font-size: 42px
   min-width: 320px
   position: relative
-  line-height: normal
+  line-height: 130%
   font-family: $default-font
   font-weight: normal
   background: $white
   color: $black
+
+html, body
+  overflow-x: hidden
 
 img
   display: block
@@ -116,7 +119,6 @@ button, .btn
   margin: 0
   border: none
   border-radius: 0
-
   &:hover, &:focus
     outline: none
     box-shadow: none
@@ -127,11 +129,56 @@ button, .btn
   justify-content: center
   text-align: center
   padding: 10px 45px
-  font-size: 16px
-  font-weight: bold
-  height: 46px
-  border-radius: 10px
+  text-transform: uppercase
+  font-size: 34px
+  font-weight: 600
+  height: 130px
+  border-radius: 200px
   transition: 0.3s ease
+  width: 100%
+  position: relative
+  z-index: 1
+
+.btn-decor
+  &::before, &:after
+    content: ''
+    position: absolute
+    top: -186px
+    width: 120px
+    height: 205px
+    background: url('../img/hand-green1.svg') no-repeat center
+    background-size: 100%
+    z-index: -1
+    transition: 0.3s ease
+  &::before
+    left: 70px
+  &:after
+    right: 70px
+    background: url('../img/hand-green2.svg') no-repeat center
+    background-size: 100%
+
+.btn-decor-v2
+  &:before
+    left: 0
+  &::after
+    right: 0
+
+.btn-icon
+  @include d-flex
+  margin: 0 20px 0 0
+
+.btn-green
+  color: $white
+  background: $green
+  &:hover, &:focus
+    background: $pink
+    color: $white
+    &::before
+      background: url('../img/hand-pink1.svg') no-repeat center
+      background-size: 100%
+    &::after
+      background: url('../img/hand-pink2.svg') no-repeat center
+      background-size: 100%
 
 .svg-icon
   display: inline-block
@@ -140,7 +187,7 @@ button, .btn
 
 strong, b
   font-weight: bold
-  display: inline-block
+  // display: inline-block
 
 ul, ol
   padding: 0 0 0 20px
@@ -152,10 +199,28 @@ ul, ol
 .list-dots
   list-style-type: disc
 
-h1, .h1
+.color-pink
+  color: $pink
+
+.color-green
+  color: $green
+
+.style-italic
+  font-style: italic
+
+h1
+  width: 100%
+  font-size: 170px
+  font-weight: normal
+  font-family: $font
+  line-height: 90%
+  text-transform: uppercase
+
+.h1
   width: 100%
   font-family: $font
   font-size: 240px
+  line-height: 100%
   margin: 0 auto
 
 h2, .h2
@@ -163,8 +228,14 @@ h2, .h2
   text-align: center
   font-family: $font
   font-size: 100px
+  line-height: 110%
   margin: 0 auto 25px
-  
+
+h3, .h3
+  width: 100%
+  font-size: 62px
+  line-height: 110%
+  font-family: $font
 
 .text-decor
   position: relative
@@ -206,6 +277,15 @@ h2, .h2
   margin: 0 auto
   position: relative
   z-index: 1
+
+.row
+  display: flex
+  flex-wrap: wrap
+  margin: 0 -20px
+
+.col-50
+  width: 50%
+  padding: 0 20px
 
 .w-100
   width: 100%
