@@ -299,8 +299,55 @@ ul, ol {
   padding: 0;
 }
 
-.list-dots {
-  list-style-type: disc;
+.list-dots li {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 0 15px;
+}
+.list-dots li:last-child {
+  margin: 0;
+}
+.list-dots li::before {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #4B6359;
+  margin: 15px 12px 0 0;
+}
+
+.list-decor > li {
+  margin: 0 0 20px;
+}
+.list-decor > li:last-child {
+  margin: 0;
+}
+.list-decor > li p {
+  display: flex;
+  align-items: flex-start;
+}
+.list-decor > li p::before {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  min-width: 30px;
+  height: 26px;
+  background: url("../img/title-decor.svg") no-repeat center;
+  background-size: 100%;
+  margin: 15px 20px 0 0;
+}
+.list-decor strong {
+  font-weight: 500;
+}
+
+.list-decor2 > li p::before {
+  background: url("../img/title-decor2.svg") no-repeat center;
+  background-size: 100%;
 }
 
 .color-pink {

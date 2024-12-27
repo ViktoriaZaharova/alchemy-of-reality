@@ -614,9 +614,11 @@
 }
 
 .for-whom {
-  background: url("../img/for-whom-bg.png") no-repeat center top;
+  background: url("../img/for-whom-bg2.png") no-repeat center top;
   background-size: 100%;
   padding: 164px 0 100px;
+  position: relative;
+  z-index: 1;
 }
 .for-whom h3 {
   text-align: center;
@@ -685,4 +687,118 @@
 .for-whom-footer .btn {
   max-width: 900px;
   margin-left: auto;
+}
+
+.prices {
+  padding: 0 0 165px;
+  background: url("../img/prices-bg.png") no-repeat center bottom;
+  background-size: 100%;
+  position: relative;
+  z-index: 1;
+  margin: 0 0 -70px;
+}
+
+.price-card {
+  width: 100%;
+  font-size: 36px;
+  line-height: 130%;
+}
+.price-card__head {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 310px;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 34px;
+}
+.price-card h3 {
+  text-transform: uppercase;
+  font-size: 100px;
+  line-height: 110%;
+  color: #F4F4F4;
+}
+.price-card__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+.price-card__body {
+  margin: 20px 0 0;
+  width: 100%;
+  padding: 40px;
+  border-radius: 30px;
+}
+.price-card__body ul span {
+  font-size: 32px;
+  line-height: 110%;
+}
+.price-card__body ul ul {
+  margin: 10px 0 0;
+  font-size: 32px;
+  line-height: 110%;
+}
+.price-card .price {
+  font-size: 70px;
+  line-height: 110%;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  margin: 80px auto 0;
+}
+.price-card h4 {
+  margin: 40px 0 5px;
+  width: 100%;
+  font-family: "Kudry", sans-serif;
+  font-size: 52px;
+  line-height: 130%;
+}
+.price-card__footer {
+  width: 100%;
+  margin: 20px 0 0;
+}
+
+.places {
+  text-align: center;
+  margin: 34px auto 4px;
+  width: 100%;
+  font-size: 32px;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+.price-card1 .price-card__head, .price-card1 .price-card__body {
+  border: 3px dashed #232323;
+}
+.price-card1 h3 {
+  color: #4B6359;
+}
+
+.price-card2 {
+  color: #F4F4F4;
+}
+.price-card2 .price-card__head, .price-card2 .price-card__body {
+  background: #232323;
+}
+.price-card2 h3 {
+  font-size: 82px;
+  text-align: center;
+}
+
+.price-card3 {
+  color: #F4F4F4;
+}
+.price-card3 .price-card__head, .price-card3 .price-card__body {
+  background: #A67C8C;
+}
+.price-card3 .price {
+  margin: 0;
 }
