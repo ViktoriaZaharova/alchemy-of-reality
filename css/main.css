@@ -527,7 +527,7 @@
 }
 
 .what-awaits {
-  margin: 0 0 80px;
+  margin: 0 0 100px;
 }
 .what-awaits-wrapper {
   width: 100%;
@@ -557,6 +557,107 @@
   padding: 86px 42px 224px;
   transform: rotate(10deg);
   margin: 140px 0 0;
+}
+
+.steps-courses {
+  color: #F4F4F4;
+}
+.steps-courses h2 {
+  margin: 0 auto 50px;
+  max-width: 720px;
+}
+.steps-courses .container {
+  flex-direction: column;
+}
+
+.steps-courses-wrapper {
+  border-radius: 30px;
+  width: 100%;
+  padding: 100px 20px;
+  background: #232323;
+}
+
+.steps-courses-about {
+  margin: 100px auto 0;
+  max-width: 1530px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  border: 2px dashed #F4F4F4;
+  border-radius: 30px;
+  padding: 50px;
+}
+.steps-courses-about::before, .steps-courses-about:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: url("../img/steps-decor1.svg") no-repeat center;
+  background-size: 100%;
+  width: 103px;
+  height: 245px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.steps-courses-about::before {
+  left: 70px;
+  transform: translate(0, -50%) rotate(-15deg);
+}
+.steps-courses-about::after {
+  right: 70px;
+  transform: translate(0, -50%) rotate(15deg);
+}
+.steps-courses-about .box-text {
+  max-width: 972px;
+  font-weight: 300;
+  line-height: 130%;
+  margin: 0 auto;
+}
+.steps-courses-about h3 {
+  font-size: 62px;
+  line-height: 110%;
+  margin: 0 auto 25px;
+}
+
+.steps-courses-box {
+  width: 100%;
+}
+.steps-courses-box__head {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  font-style: italic;
+}
+.steps-courses-box__number {
+  font-size: 18px;
+  line-height: 130%;
+  opacity: 0.5;
+  margin: 0 15px 0 0;
+}
+.steps-courses-box__body {
+  margin: 25px 0;
+  width: 100%;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 130%;
+}
+.steps-courses-box__body .box-text::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 26px;
+  min-width: 30px;
+  margin: 0 10px 0 0;
+  background: url("../img/title-decor.svg") no-repeat center;
+  background-size: 100%;
+}
+.steps-courses-box__footer {
+  background: #A67C8C;
+  border-radius: 30px;
+  width: 100%;
+  padding: 30px;
+  font-size: 36px;
+  line-height: 130%;
 }
 
 .result-courses {

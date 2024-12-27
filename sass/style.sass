@@ -217,7 +217,7 @@ ul, ol
     margin: 0 0 20px
     &:last-child
       margin: 0
-    p  
+    p
       display: flex
       align-items: flex-start
       &::before
@@ -228,9 +228,9 @@ ul, ol
         height: 26px
         background: url('../img/title-decor.svg') no-repeat center
         background-size: 100%
-        margin: 15px 20px 0 0   
+        margin: 15px 20px 0 0
   strong
-    font-weight: 500   
+    font-weight: 500
 
 .list-decor2
   >li
@@ -238,7 +238,6 @@ ul, ol
       &::before
         background: url('../img/title-decor2.svg') no-repeat center
         background-size: 100%
-               
 
 .color-pink
   color: $pink
@@ -332,13 +331,13 @@ h3, .h3
 
 .col-30
   width: 33.33%
-  padding: 0 10px  
+  padding: 0 10px
 
 .w-100
   width: 100%
 
 .m-50
-  margin: 50px 0  
+  margin: 50px 0
 
 .box-text
   p
@@ -382,3 +381,68 @@ h3, .h3
       background: $green
       &:hover
         background: $pink
+
+.tabs
+  width: 100%
+  max-width: 1530px
+  margin: 0 auto
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.tabs-list
+  max-width: 630px
+  padding: 0 20px 0 0
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.tabs-information
+  width: calc(100% - 630px)
+
+.tabs__content
+  display: none
+  &.active
+    display: block
+
+.tabs__caption
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  li
+    width: 180px
+    height: 160px
+    cursor: pointer
+    transition: .3s ease
+    margin: 0 20px 20px 0
+    padding: 15px
+    color: $white
+    border-radius: 30px
+    @include d-flex
+    font-size: 80px
+    line-height: 110%
+    font-family: $font
+    background: $green url('../img/steps-decor3.svg') no-repeat center
+    background-size: 100%
+    &.active
+      background: $pink url('../img/steps-decor2.svg') no-repeat center
+      background-size: 100%
+  .tabs-mouse
+    background: transparent
+    width: 360px
+    font-size: 36px
+    line-height: 120%
+    font-family: $default-font
+    appearance: none  
+    display: flex
+    align-items: center
+    padding: 0
+    &::before
+      content: ''
+      @include d-flex
+      width: 35px
+      min-width: 35px
+      height: 38px  
+      background: url('../img/hand-mouse.svg') no-repeat center
+      background-size: 100%
+      margin: 0 15px 0 0
