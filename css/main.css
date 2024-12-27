@@ -558,3 +558,131 @@
   transform: rotate(10deg);
   margin: 140px 0 0;
 }
+
+.result-courses {
+  margin: 100px 0 37px;
+}
+.result-courses h2 {
+  max-width: 852px;
+}
+.result-courses h4 {
+  font-style: italic;
+  max-width: 1250px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+.result-courses-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  margin: 30px 0 40px;
+}
+
+.result-courses-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+  color: #F4F4F4;
+  background: #4B6359;
+  border-radius: 30px;
+  padding: 40px;
+  flex: 1;
+  font-size: 36px;
+  line-height: 130%;
+  transform: rotate(-5deg);
+}
+.result-courses-box:nth-child(even) {
+  background: #A67C8C;
+  transform: rotate(5deg);
+}
+.result-courses-box:before {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  margin: 0 0 30px;
+  background: url("../img/result-icon.svg") no-repeat center;
+  background-size: 100%;
+}
+.result-courses-box .box-text {
+  margin: auto 0 0;
+}
+
+.for-whom {
+  background: url("../img/for-whom-bg.png") no-repeat center top;
+  background-size: 100%;
+  padding: 164px 0 100px;
+}
+.for-whom h3 {
+  text-align: center;
+  font-size: 42px;
+  font-family: "Jost", sans-serif;
+  max-width: 1455px;
+  margin: 40px auto 25px;
+}
+.for-whom h3 strong {
+  font-weight: 500;
+}
+.for-whom .subtitle-text {
+  max-width: none;
+}
+
+.for-whom-box {
+  background: #232323;
+  color: #F4F4F4;
+  margin: 0 0 20px;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 300px 40px 40px 40px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  font-size: 36px;
+  line-height: 130%;
+}
+.for-whom-box h4 {
+  font-weight: 500;
+  margin: 0 0 15px;
+}
+.for-whom-box .box-text {
+  font-weight: 300;
+  font-size: 32px;
+}
+.for-whom-box__img {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+.for-whom-box__img img {
+  width: 100%;
+}
+
+.for-whom-box2 {
+  padding-top: 253px;
+}
+
+.for-whom-footer {
+  margin: 30px 0 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.for-whom-footer .box-text {
+  max-width: 833px;
+  font-size: 36px;
+  line-height: 130%;
+}
+.for-whom-footer .box-text strong {
+  font-weight: 500;
+}
+.for-whom-footer .btn {
+  max-width: 900px;
+  margin-left: auto;
+}
