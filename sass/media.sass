@@ -66,6 +66,47 @@
   .result-courses-box
     font-size: 26px
 
+  .for-whom-footer .box-text
+    font-size: 26px
+    max-width: 600px
+
+  .for-whom-box
+    font-size: 30px
+    .box-text
+      font-size: 26px
+
+  .for-whom h3
+    font-size: 36px
+    margin: 30px auto 20px
+    max-width: 1000px
+
+  .price-card
+    font-size: 30px
+    h3
+      font-size: 70px
+    .price
+      font-size: 50px
+    h4
+      font-size: 40px
+    &__body
+      ul
+        span
+          font-size: 26px
+        ul
+          font-size: 26px
+
+  .list-decor > li p::before
+    width: 24px
+    min-width: 24px
+    height: 20px
+    margin: 7px 13px 0 0
+
+  .places
+    font-size: 26px
+
+  .list-dots li::before
+    margin: 10px 10px 0 0
+
 @media only screen and (max-width: 1400px)
   h2, .h2
     font-size: 60px
@@ -198,6 +239,21 @@
 
   .what-awaits-wrapper
     margin: 0
+
+  .price-card
+    font-size: 24px
+    &__head
+      height: 210px
+    h3
+      font-size: 50px
+    .price
+      font-size: 40px
+    h4
+      font-size: 30px
+    &__body
+      ul
+        span
+          font-size: 20px
 
 @media only screen and (max-width: 1200px)
   .container
@@ -402,6 +458,31 @@
     h4
       max-width: 700px
 
+  .for-whom
+    padding: 90px 0 50px
+    h3
+      font-size: 22px
+      max-width: 700px
+      margin: 10px auto 15px
+
+  .for-whom-box
+    font-size: 22px
+    border-radius: 20px
+    padding: 250px 20px 20px 20px
+    .box-text
+      font-size: 20px
+    h4
+      margin: 0 0 8px
+
+  .prices
+    padding: 0 0 116px
+    .col-30
+      width: 100%
+
+  .price-card
+    max-width: 700px
+    margin: 0 auto 40px
+
 @media only screen and (max-width: 992px)
   .logo
     font-size: 30px
@@ -540,8 +621,6 @@
     &:after
       right: 0
 
-  .prices
-    margin: 0 0 -20px
 
   footer
     padding: 23px 0 50px
@@ -727,7 +806,7 @@
     height: auto
 
   .result-courses h4
-    margin: 0 auto  
+    margin: 0 auto
 
   .result-courses-box
     max-width: none
@@ -740,6 +819,83 @@
   .result-courses-wrapper
     flex-direction: column
     margin: 0 auto 10px
+
+  .for-whom
+    h3
+      font-size: 20px
+    .col-30
+      width: 100%
+
+  .for-whom-box
+    font-size: 18px
+    .box-text
+      font-size: 18px
+
+  .for-whom-footer
+    flex-direction: column
+    align-items: center
+    text-align: center
+    margin: 10px 0 0
+    .box-text
+      max-width: none
+      margin: 0 auto 20px
+      font-size: 20px
+
+  .text-decor::before
+    width: 30px
+    height: 28px
+    margin: 0 auto 15px
+
+  .prices
+    .subtitle-text
+      max-width: 650px
+
+  .price-card
+    max-width: 400px
+    font-size: 18px
+    &__head
+      border-radius: 15px
+      height: 155px
+    &__body
+      padding: 20px
+      margin: 10px 0 0
+      border-radius: 15px
+      ul
+        span
+          font-size: 16px
+        ul
+          font-size: 16px
+    &__footer
+      margin: 10px 0 0
+    h4
+      margin: 15px 0 6px
+      font-size: 26px
+    .price
+      font-size: 35px
+      margin: 30px auto 0
+
+  .list-decor > li
+    margin: 0 0 10px
+    &:last-child
+      margin: 0
+    p::before
+      width: 15px
+      height: 13px
+      min-width: 15px
+      margin: 5px 10px 0 0
+
+  .list-dots li::before
+    width: 5px
+    height: 5px
+    min-width: 5px
+    margin: 6px 5px 0 0
+
+  .price-card3 .price
+    margin: 0
+
+  .places
+    font-size: 16px
+    margin: 30px auto 2px
 
 @media only screen and (max-width: 576px)
   h1
@@ -1004,7 +1160,27 @@
     border-radius: 20px
     font-size: 16px
 
-@media only screen and (max-width: 480px)
+  .subtitle-text
+    font-size: 16px
+    margin: 0 auto 15px
+
+  .for-whom
+    h3
+      font-size: 16px
+    .subtitle-text
+      margin: 0 auto 15px
+      font-size: 16px
+      max-width: 240px
+
+  .for-whom-box
+    font-size: 16px
+    padding: 150px 20px 20px 20px
+    margin: 0 0 10px
+    .box-text
+      font-size: 16px
+
+  .for-whom-footer .box-text
+    font-size: 16px
 
 @media only screen and (max-width: 420px)
   .home-image
@@ -1024,6 +1200,9 @@
 
   .on-course-total
     padding: 20px 20px 103px
+
+  .prices
+    margin: 0 0 -30px  
 
 @media only screen and (max-width: 370px)
   .about-course
