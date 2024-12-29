@@ -31,6 +31,7 @@
   z-index: 1;
   color: #F4F4F4;
   font-size: 30px;
+  line-height: 130%;
   width: 100%;
   max-width: 570px;
   padding: 14px 34px 66px;
@@ -136,7 +137,6 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  font-size: 42px;
   font-style: normal;
   font-weight: normal;
   margin: 0 0 50px;
@@ -241,6 +241,9 @@
 }
 .think-about .h2 span {
   display: block;
+}
+.think-about__img {
+  display: none;
 }
 
 .think-about-question {
