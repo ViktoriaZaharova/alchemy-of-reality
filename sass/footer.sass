@@ -58,6 +58,21 @@ footer
   width: 24px
   height: 24px
   @include d-flex
+  &::before, &:after
+    content: ''
+    position: absolute
+    left: 10px
+    top: 0
+    width: 2px
+    height: 100%
+    border-radius: 2px
+    background: $green
+  &::before
+    transform: rotate(135deg)
+  &:after
+    transform: rotate(45deg)
+
+    
 
 .modal__wrapper
   background: $white

@@ -66,6 +66,22 @@ footer .list-social {
   align-items: center;
   justify-content: center;
 }
+.modal__close::before, .modal__close:after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  border-radius: 2px;
+  background: #4B6359;
+}
+.modal__close::before {
+  transform: rotate(135deg);
+}
+.modal__close:after {
+  transform: rotate(45deg);
+}
 
 .modal__wrapper {
   background: #F4F4F4;
