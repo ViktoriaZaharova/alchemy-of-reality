@@ -1301,6 +1301,9 @@
   .home-image {
     margin: 270px 0 0;
   }
+  .home-image-text::before {
+    display: none;
+  }
   .home {
     padding: 180px 0 60px;
   }
