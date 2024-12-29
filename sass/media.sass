@@ -53,6 +53,19 @@
     padding: 50px 0
     background-position: center bottom
 
+  .steps-courses-about::before, .steps-courses-about:after
+    width: 70px
+    height: 180px
+
+  .steps-courses-about .box-text
+    max-width: 865px
+
+  .steps-courses-about h3
+    font-size: 50px
+
+  .result-courses-box
+    font-size: 26px
+
 @media only screen and (max-width: 1400px)
   h2, .h2
     font-size: 60px
@@ -176,6 +189,16 @@
       font-size: 130px
       text-align: center
 
+  .what-awaits-box
+    max-width: 450px
+    padding: 200px 30px 120px
+
+  .what-awaits-box2
+    padding: 86px 30px 210px
+
+  .what-awaits-wrapper
+    margin: 0
+
 @media only screen and (max-width: 1200px)
   .container
     padding: 0 10px
@@ -286,10 +309,98 @@
     font-size: 90px
 
   .about-course-content
-    max-width: 500px  
+    max-width: 500px
 
   .about-course-history
-    padding: 25px 50px  
+    padding: 25px 50px
+
+  .on-course
+    .col-30
+      width: 50%
+
+  .on-course-card
+    font-size: 28px
+    h4
+      font-size: 30px
+      margin: 0 0 5px
+    .box-text p
+      margin: 0 0 5px
+
+  .on-course-total
+    font-size: 28px
+    h3
+      font-size: 34px
+
+  .what-awaits-box
+    max-width: 350px
+    padding: 120px 30px 95px
+
+  .what-awaits-box2
+    padding: 62px 30px 127px
+    margin: 75px 0 0
+
+  .tabs__caption li
+    width: 100px
+    height: 85px
+    padding: 5px
+    font-size: 50px
+    border-radius: 8px
+
+  .tabs__caption .tabs-mouse
+    width: 310px
+    font-size: 26px
+
+  .steps-courses-box__body
+    font-size: 26px
+    .box-text::before
+      width: 20px
+      min-width: 20px
+      height: 15px
+
+  .steps-courses-box__footer
+    font-size: 26px
+    border-radius: 20px
+    padding: 20px
+
+  .tabs-list
+    max-width: 380px
+
+  .tabs__caption .tabs-mouse
+    width: 210px
+    font-size: 18px
+    &::before
+      width: 20px
+      min-width: 20px
+      height: 25px
+
+  .tabs-information
+    width: calc(100% - 380px)
+
+  .steps-courses-about
+    margin: 50px auto 0
+    .box-text
+      max-width: 620px
+    &::before, &:after
+      width: 50px
+      height: 125px
+
+  .result-courses-box
+    font-size: 18px
+    border-radius: 20px
+    padding: 20px
+    &::before
+      width: 50px
+      height: 50px
+      min-width: 50px
+      margin: 0 0 70px
+
+  .result-courses-wrapper
+    margin: 20px auto 10px
+
+  .result-courses
+    margin: 50px 0
+    h4
+      max-width: 700px
 
 @media only screen and (max-width: 992px)
   .logo
@@ -383,6 +494,37 @@
 
   .about-course .h1, .about-course h2.h1
     font-size: 70px
+
+  .steps-courses-about
+    padding: 108px 30px 20px
+    font-size: 16px
+    border-radius: 20px
+    margin: 20px auto 0
+    h3
+      font-size: 28px
+      margin: 0 auto 6px
+    .box-text
+      max-width: none
+
+  .steps-courses-about::before, .steps-courses-about:after
+    top: 20px
+    width: 30px
+    height: 72px
+
+  .steps-courses-about::before
+    left: calc(50% - 35px)
+    transform: rotate(-15deg)
+
+  .steps-courses-about:after
+    transform: rotate(15deg)
+    right: calc(50% - 35px)
+
+  .steps-courses-wrapper
+    border-radius: 30px
+    padding: 50px 0 10px
+
+  .steps-courses-box__footer, .steps-courses-box__body
+    font-size: 20px
 
 @media only screen and (max-width: 768px)
   .btn
@@ -508,13 +650,12 @@
   .about-course-content
     max-width: 380px
 
-
   .about-course-history
     border-radius: 20px
     padding: 20px
 
   .about-course .box-text
-    margin: 15px 0  
+    margin: 15px 0
     p
       img
         max-width: 12px
@@ -522,13 +663,83 @@
   .about-course-blockquote
     margin: 15px 0 0
     align-items: flex-start
-    
+
     .photo
       width: 70px
       min-width: 70px
       margin: 0 10px 0 0
-    .text  
 
+  .on-course .col-30
+    width: 100%
+
+  .on-course-card
+    margin: 0 0 15px
+    font-size: 20px
+    h4
+      font-size: 24px
+    &__img
+      img
+        border-radius: 15px
+    &__body
+      margin: 15px 0 0
+
+  .on-course-total
+    border-radius: 20px
+    font-size: 16px
+    h3
+      font-size: 28px
+
+  .what-awaits
+    margin: 0 0 50px
+
+  .what-awaits-box
+    max-width: 295px
+    margin: 0 auto 10px
+    transform: none
+    font-size: 18px
+    line-height: 130%
+    padding: 130px 30px 45px
+    background: url('../img/awaits-bg1-mobile.png') no-repeat center top
+    background-size: 100%
+
+  .what-awaits-box2
+    padding: 45px 20px 114px
+    background: url('../img/awaits-bg2-mobile.png') no-repeat center
+    background-size: 100%
+
+  .what-awaits-wrapper
+    flex-direction: column
+    align-items: center
+
+  .tabs-information
+    width: 100%
+
+  .tabs-list
+    max-width: none
+
+  .steps-courses h2
+    margin: 0 auto 15px
+
+  .tabs__caption .tabs-mouse
+    width: 100%
+    order: -1
+    margin: 0 0 10px
+    height: auto
+
+  .result-courses h4
+    margin: 0 auto  
+
+  .result-courses-box
+    max-width: none
+    width: 100%
+    transform: none
+    margin: 0 auto 10px
+    &:nth-child(even)
+      transform: none
+
+  .result-courses-wrapper
+    flex-direction: column
+    margin: 0 auto 10px
 
 @media only screen and (max-width: 576px)
   h1
@@ -738,18 +949,60 @@
     background: url('../img/about-course-mobile.png') no-repeat center bottom
     background-size: 100%
     &-content
-      max-width: none  
+      max-width: none
 
   .about-course-blockquote
     font-size: 14px
-    line-height: 130%        
+    line-height: 130%
 
   .about-course .h1, .about-course h2.h1
     font-size: 56px
 
   .about-course-history
     background: #A67C8C url('../img/about-history-bg-mobile.svg') no-repeat center
-    background-size: cover  
+    background-size: cover
+
+  .tabs__caption
+    li
+      width: 70px
+      height: 60px
+      margin: 0 7px 7px 0
+      font-size: 30px
+    .tabs-mouse
+      font-size: 14px
+      margin: 0 0 10px
+      &::before
+        width: 19px
+        min-width: 19px
+        height: 21px
+        margin: 0 10px 0 0
+
+  .tabs-information
+    margin: 8px 0 0
+
+  .steps-courses-box__head
+    flex-direction: column
+    align-items: flex-start
+    font-size: 18px
+
+  .steps-courses-box__number
+    font-size: 14px
+    margin: 0 0 6px
+
+  .steps-courses-box__body
+    margin: 4px 0 10px
+    font-size: 16px
+    .box-text
+      &::before
+        width: 12px
+        height: 10px
+        min-width: 12px
+        margin: 0 7px 0 0
+
+  .steps-courses-box__footer
+    padding: 20px
+    border-radius: 20px
+    font-size: 16px
 
 @media only screen and (max-width: 480px)
 
@@ -768,6 +1021,9 @@
 
   .about-course
     padding: 50px 0 400px
+
+  .on-course-total
+    padding: 20px 20px 103px
 
 @media only screen and (max-width: 370px)
   .about-course
