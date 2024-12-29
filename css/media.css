@@ -516,6 +516,13 @@
     max-width: 700px;
     margin: 0 auto 40px;
   }
+  .author-text {
+    max-width: 850px;
+  }
+  .author-text::before {
+    height: 185px;
+    width: 265px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .logo {
@@ -611,6 +618,7 @@
   }
   .author-text {
     margin: -80px auto 0;
+    max-width: 780px;
   }
   .about-course .h1, .about-course h2.h1 {
     font-size: 70px;
@@ -1046,7 +1054,7 @@
   .home-image {
     width: 100%;
     order: 1;
-    margin: 283px 0 0;
+    margin: 370px 0 0;
   }
   .slogan {
     padding: 0 10px;
@@ -1159,21 +1167,32 @@
     border-radius: 20px;
     background-size: 104px;
   }
+  .author {
+    background: url("../img/author-bg-mobile.png") no-repeat center top;
+    background-size: cover;
+    margin: 0;
+    padding: 100px 0 50px;
+  }
   .author h2 {
     max-width: 450px;
   }
   .author-text {
+    max-width: 500px;
     padding: 20px 25px;
     border-radius: 20px;
     background: #4B6359 url("../img/author-icon1-mobile.svg") no-repeat center;
     background-size: 100%;
-    margin: -30px auto 0;
+    margin: -60px auto 0;
   }
   .author-text::before {
     width: 40px;
     height: 48px;
     left: -15px;
     bottom: 55px;
+  }
+  .author-image {
+    margin: 0 auto;
+    max-width: 500px;
   }
   .text-description {
     max-width: 230px;
@@ -1273,12 +1292,17 @@
     font-size: 16px;
   }
 }
+@media only screen and (max-width: 480px) {
+  .home-image {
+    margin: 280px 0 0;
+  }
+}
 @media only screen and (max-width: 420px) {
   .home-image {
-    margin: 180px 0 0;
+    margin: 270px 0 0;
   }
   .home {
-    padding: 180px 0 88px;
+    padding: 180px 0 60px;
   }
   h2, .h2 {
     font-size: 34px;
@@ -1295,9 +1319,22 @@
   .prices {
     margin: 0 0 -30px;
   }
+  .author-text {
+    max-width: 300px;
+    margin: -80px auto 0;
+  }
+  .author-image {
+    max-width: 300px;
+  }
+  .combine h2 {
+    max-width: 250px;
+  }
 }
 @media only screen and (max-width: 370px) {
   .about-course {
     padding: 50px 0 360px;
+  }
+  .home-image {
+    margin: 180px 0 0;
   }
 }
