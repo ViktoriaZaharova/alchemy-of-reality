@@ -923,7 +923,7 @@
     margin: 0 auto 15px
 
   body
-    font-size: 16px
+    font-size: 18px
     line-height: 130%
 
   .text-decor::before
@@ -971,8 +971,8 @@
 
   .home
     padding: 180px 0 130px
-    background: url('../img/home-bg-mobile.png') no-repeat center bottom
-    background-size: cover
+    background: url('../img/home-bg-mobile.png') no-repeat center -400px
+    background-size: 570px
 
   .home-image
     width: 100%
@@ -993,8 +993,8 @@
       margin: 0 auto
 
   .home-image-text
-    max-width: 300px
-    font-size: 14px
+    max-width: 320px
+    // font-size: 14px
     img
       max-width: 15px
       margin: 0 auto 6px
@@ -1022,7 +1022,8 @@
       margin: 0 0 0 2px
 
   .routine .box-text
-    max-width: 300px
+    max-width: 365px
+    font-size: 18px
 
   .routine-top
     padding: 0 0 162px
@@ -1057,7 +1058,7 @@
       margin: -23px 0 0
       padding: 33px 20px 20px
       .box-text
-        font-size: 16px
+        font-size: 18px
     h4
       margin: 0 0 6px
 
@@ -1202,17 +1203,15 @@
   .home-image
     margin: 280px 0 0
 
-@media only screen and (max-width: 420px)
-  .home-image
-    margin: 270px 0 0
-
   .home-image-text::before
-    display: none  
-  
+    display: none    
 
   .home
     padding: 180px 0 60px
+    background-size: 490px
+    background-position: center -300px  
 
+@media only screen and (max-width: 420px)
   h2, .h2
     font-size: 34px
 
@@ -1245,3 +1244,7 @@
 
   .home-image
     margin: 180px 0 0
+
+  .home
+    background-size: cover
+    background-position: center bottom
